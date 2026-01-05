@@ -35,3 +35,5 @@ This project emphasizes analysis and evaluation over model training.
 ## Goal
 The long-term goal of this project is to contribute to reliable and deployable inference strategies for foundation models operating under real-world constraints.
 
+## Prompt Design
+ID and OOD prompt sets used in this project are documented in the `prompts/` directory.
