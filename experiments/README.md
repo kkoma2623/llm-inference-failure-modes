@@ -19,6 +19,11 @@ Examples:
 - `chatgpt_paris_id_two-sentences`
 - `chatgpt_paris_ood_format-3bullets-10words`
 
+## Evaluation Rules (global)
+- Image links or media attachments are treated as extraneous and are ignored.
+- Only the textual content is evaluated for constraint adherence and failure-mode labeling.
+
+
 ## Labels (v0.1)
 Failure modes are defined in `analysis/failure_taxonomy.md`.
 For consistency, assign **one primary label per run**.
