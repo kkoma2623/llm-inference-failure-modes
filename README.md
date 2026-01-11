@@ -27,9 +27,9 @@ This project emphasizes analysis and evaluation over model training.
 
 ## Current Status
 - [x] Project scope defined
-- [ ] ID / OOD prompt set construction
-- [ ] Sampling-based inference experiments
-- [ ] Failure mode taxonomy refinement
+- [x] ID / OOD prompt set construction
+- [x] Sampling-based inference experiments
+- [x] Failure mode taxonomy refinement
 - [ ] Quantitative and qualitative analysis
 
 ## Goal
