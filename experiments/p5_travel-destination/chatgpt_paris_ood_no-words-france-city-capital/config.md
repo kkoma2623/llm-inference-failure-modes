@@ -3,7 +3,7 @@
 - Date: 2026-01-09
 - Model: ChatGPT
 - Domain: Paris
-- Prompt type: ID
+- Prompt type: OOD
 - Runs: 5
 - Tooling: ChatGPT default (no special settings controlled)
 - Chat context: Fresh chat

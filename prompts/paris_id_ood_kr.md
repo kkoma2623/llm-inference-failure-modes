@@ -1,13 +1,13 @@
-# Paris Topic: ID / OOD Prompt Set
+# Paris 주제: ID / OOD 프롬프트 세트
 
-English is the canonical documentation language in this file. For the Korean companion, see [paris_id_ood_kr.md](paris_id_ood_kr.md).
+이 파일의 기준 문서는 영어이며, 영어 원문은 [paris_id_ood.md](paris_id_ood.md)에서 볼 수 있다.
 
-This document contains in-distribution (ID) and out-of-distribution (OOD) prompt pairs designed to analyze instruction-following behavior and failure modes of large language models during inference.
+이 문서는 대규모 언어 모델의 추론 단계에서 지시 이행과 실패 양상을 분석하기 위해 설계한 in-distribution(ID) 및 out-of-distribution(OOD) 프롬프트 쌍을 정리한다.
 
-## Prompt Design Principles
-- ID prompts follow standard benchmark-style phrasing.
-- OOD prompts introduce realistic constraints commonly seen in user queries, such as format restrictions, perspective shifts, or prohibited terms.
-- All prompt pairs stay within the same domain so that output differences are easier to attribute to the constraint itself.
+## 프롬프트 설계 원칙
+- ID 프롬프트는 표준 benchmark에 가까운 단순한 문구를 사용한다.
+- OOD 프롬프트는 형식 제약, 관점 전환, 금지 단어처럼 실제 사용자 질의에서 자주 보이는 제약을 도입한다.
+- 모든 프롬프트 쌍은 동일한 도메인 안에 두어 출력 차이를 제약 자체로 해석하기 쉽게 했다.
 
 ---
 

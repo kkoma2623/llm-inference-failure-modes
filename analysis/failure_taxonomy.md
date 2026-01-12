@@ -1,7 +1,8 @@
 # Failure Taxonomy (v0.1)
 
-This document defines the **primary failure-mode labels** used in experiment notes.
-For consistency, assign **one primary label per run** (even if multiple issues are present).
+English is the canonical documentation language in this file. For the Korean companion, see [failure_taxonomy_kr.md](failure_taxonomy_kr.md).
+
+This document defines the primary failure-mode labels used in experiment notes. Assign one primary label per run, even if multiple issues are present.
 
 ## Labels
 
@@ -9,43 +10,42 @@ For consistency, assign **one primary label per run** (even if multiple issues a
 The output follows the prompt and constraints without obvious issues.
 
 ### instruction violation
-The output fails to follow explicit constraints (e.g., forbidden terms, required format, length, number of sentences/bullets).
+The output fails to follow explicit constraints such as forbidden terms, required format, length limits, or sentence-count requirements.
 
 **Examples**
-- Mentions a banned word or landmark.
-- Exceeds the required sentence count.
-- Does not follow the requested output format (e.g., bullets).
+- Mentions a banned word or landmark
+- Exceeds the required sentence count
+- Ignores the requested bullet or paragraph format
 
 ### hallucination
 The output introduces unsupported or fabricated details presented as factual.
 
 **Examples**
-- Claims a specific fact (event, statistic, location detail) without evidence.
-- Invents concrete details not implied by the prompt.
+- States a specific event, statistic, or location detail without support
+- Invents concrete details not implied by the prompt
 
 ### partial correctness
-The output is on-topic but incomplete or weakly satisfies the prompt.
-This includes overly generic answers that avoid the core requirement without clearly violating constraints.
+The output is on-topic but incomplete, over-formatted, or only weakly satisfies the prompt.
 
 **Examples**
-- Avoids banned terms but becomes vague and uninformative.
-- Misses key requested aspects (e.g., ignores “for someone who dislikes crowds”).
-- Responds generally but fails to address the intended framing.
+- Avoids banned terms but becomes vague and uninformative
+- Misses a key requested framing
+- Adds unrequested content such as image blocks under a text-only evaluation protocol
 
 ### overconfidence
 The output expresses high certainty despite being incorrect, unsupported, or speculative.
 
 **Examples**
-- Uses strong certainty language ("definitely", "always") for uncertain claims.
-- Confidently states details that are likely wrong or unverifiable.
+- Uses strong certainty language for uncertain claims
+- Confidently states details that are likely wrong or unverifiable
 
 ### needs-user-choice
-Instead of producing a single final answer, the model provides multiple candidate responses and asks the user to choose a preference.
+Instead of committing to one final answer, the model produces multiple candidates and asks the user to choose.
 
 **Examples**
-- “Response 1 … Response 2 … Which do you prefer?”
-- “Pick one of these options …”
+- "Response 1 ... Response 2 ... Which do you prefer?"
+- "Pick one of these options ..."
 
 ## Notes
-- If multiple issues appear, choose the **most central** issue as the primary label.
-- Secondary issues can be described in the **Quick Observations** section of `notes.md`.
+- If multiple issues appear, choose the most central issue as the primary label.
+- Secondary issues can be described in the Quick Observations section of `notes.md`.
